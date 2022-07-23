@@ -11,6 +11,6 @@
  let yellow=
  document.getElementById('yellow')
  yellow.addEventListener('change',(e)=>{
-   console.log(e.target.value)
+
    document.documentElement.style.setProperty('--yellow',e.target.value)
 })
