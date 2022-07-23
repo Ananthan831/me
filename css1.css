@@ -126,6 +126,7 @@ header .navbar ul li a{
 header .navbar ul li a:hover{
     background: var(--yellow);
 }
+
 #menu{
     position: fixed;
     display: none;
@@ -142,6 +143,19 @@ header .navbar ul li a:hover{
 
 #menu:hover{
     color: var(--yellow);
+}
+.theme{
+    position: fixed;
+    
+    top:2rem;
+    right:2rem;
+    background:#333;
+    color: var(--yellow);
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem;
+    z-index: 1000;
+    border-radius: 10px;
 }
 
 
@@ -348,12 +362,16 @@ header .navbar ul li a:hover{
         padding:1rem 4rem;
     }
 }
-@media  (max-width:991px){
+@media  (max-width:990px){
     header{
         left: -120%;
     }
     #menu{
         display:flex;
+    }
+    .theme{
+        top: 8rem;
+        right: 2rem;
     }
     header.toggle{
         left:0%;
@@ -364,6 +382,7 @@ header .navbar ul li a:hover{
     html{
         font-size:50%;
     }
+    
 } 
 @media  (max-width:400px){
     header{
@@ -372,6 +391,7 @@ header .navbar ul li a:hover{
     .heading{
         margin:0 3rem;
     }
+    
     .education{
         width:100%;
     }
