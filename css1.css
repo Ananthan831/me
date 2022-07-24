@@ -181,13 +181,23 @@ header .navbar ul li a:hover{
 .home .top .left{
     z-index:100
 }
+.home .top .left p span{
+    color: var(--yellow);
+}
+.icon{
+    padding:0.5rem;
+    margin-left: 10px;
+    
+}
 .bg{
     position:absolute;
-    background: #111111;
-    opacity: 0.9;
+    /* background: #111111; */
+    /* opacity: 0.9; */
     z-index: 90;
-    width: 500px;
+    width: 100vw;
     height: 300px;
+    backdrop-filter: blur(10px);
+
 }
 .home .top .right{
     position:relative;
@@ -218,7 +228,7 @@ header .navbar ul li a:hover{
 .effect #particles-js{
     position: absolute;
     width:100vw;
-    
+    height: 100vh;
 }
 .about .row{
     display:flex;
@@ -394,7 +404,16 @@ header .navbar ul li a:hover{
 .contact .row .content .info h3 a{
     text-transform: none;
 }
-
+.Courtesy{
+    float: right;
+    margin-right: 10px;
+}
+.Courtesy h1{
+    color: #eee;
+}
+.Courtesy span{
+    color: var(--yellow);
+}
 
 
 @media  (max-width:1200px){
