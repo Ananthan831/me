@@ -215,7 +215,7 @@ header .navbar ul li a:hover{
 }
 .effect #particles-js{
     position: absolute;
-    width:1700px;
+    width:200vh;
     max-width: 1600;
 }
 .about .row{
