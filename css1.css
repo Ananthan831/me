@@ -139,6 +139,7 @@ header .navbar ul li a:hover{
     position: fixed;
     display: none;
     top:2rem;
+    
     right:2rem;
     background:#333;
     color: #fff;
