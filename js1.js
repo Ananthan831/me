@@ -9,10 +9,10 @@ $(document).ready(function(){
       $('header').removeClass('toggle');
    });
    
-   $('a[href*="#]') .on('click',function(e){
-      e.preventDefult();
+   $('a[href*="#"]') .on('click',function(e){
+      e.preventDefault();
       $('html,body').animate({
-         scrollTop:$($(this).attr('href')).offset().top,
+         scrollTop: $($(this).attr('href')).offset().top,
       },
         500,
         'linear'
@@ -22,6 +22,27 @@ $(document).ready(function(){
 let yellow=
  document.getElementById('yellow')
  yellow.addEventListener('change',(e)=>{
-
    document.documentElement.style.setProperty('--yellow',e.target.value)
 })
+
+
+
+
+
+document
+  .querySelector("#contact")
+  .addEventListener("submit", handleSubmit);
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  let myForm = document.getElementById("contact");
+  let formData = new FormData(myForm);
+  console.log(myForm)
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => console.log("Form successfully submitted"))
+    .catch((error) => alert(error));
+};

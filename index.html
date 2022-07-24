@@ -20,10 +20,10 @@
         <nav class="navbar"> 
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Education">Education</a></li>
-                <li><a href="#Portfolio">Portfolio</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -40,7 +40,7 @@
                         <h3>Hi!!</h3>
                         <a href="#"><h1>I'm <span> A</span>nanthan.<span>A</span></h1></a>
                         <p>Enthusiastic Engineering student .Loves Music.</p>
-                        <a href="#About"><button class="btn">About me <i class="fas fa-user"></i></button></a>
+                        <a href="#about"><button class="btn">About me <i class="fas fa-user"></i></button></a>
                         </div>
                         <div class="bg"></div>
                     <div id="particles-js"></div>
@@ -57,7 +57,7 @@
                 <h3>age: <span>21</span></h3>
                 <h3>qualifiaction: <span>Btech in Electrical and Electronics Engineering(pursuing)</span></h3>
                 <h3>languages: <span>Malayalam, Engish, Hindi, Tamil</span></h3>
-                <a href="#"><button class="btn">download CV <i class="fas-fa-download"> </i></button></a>
+                <a href="RESUME-ANANTHAN.pdf" target="_blank"><button class="btn">download CV <i class="fas-fa-download"> </i></button></a>
                 </div>
             </div>
         </section>
@@ -91,11 +91,11 @@
         <h1 class="heading">my<span>portfolio</span></h1>
         <div class="box-container">
             <div class="box">
-                <img src="1.p.png" alt="">
+                <a href="1.p.png"><img  src="1.p.png" alt=""></a>
                 <h4 class="text">Electric Vehicles</h4>
                 </div>
             <div class="box">
-                <img src="2.p.png" alt="">
+                <a href="2.p.png"><img  src="2.p.png" alt=""></a>
                 <h4 class="text">Great Learning</h4>
                 </div>
             </div>
@@ -108,17 +108,19 @@
                 <div class="info">
                     <h3><i class="fas fa-envelope"></i>ananthananil8301@gmail.com</h3>
                     <h3><i class="fas fa-phone"></i>9995370426</h3>
-                    <h3><i class="fa-brands fa-linkedin-in"></i>linkedin.com/in/ananthan8301</h3>
-                    <h3><i class="fa-brands fa-github"></i>https://github.com/Ananthan831</h3>
-                    <h3><i class="fa-brands fa-twitter"></i>https://twitter.com/831Ananthan</h3>
+                    <h3><a href="https://linkedin.com/in/ananthan8301" style="color:#eee;"><i class="fa-brands fa-linkedin-in" ></i>linkedin.com/in/ananthan8301</a></h3>
+                    <h3><a href="https://github.com/Ananthan831" style="color:#eee;"><i class="fa-brands fa-github"></i>https://github.com/Ananthan831</a></h3>
+                    <h3><a href="https://twitter.com/831Ananthan" style="color:#eee;"><i class="fa-brands fa-twitter"></i>https://twitter.com/831Ananthan</a></h3>
                     </div>
                 </div>
-            <form action="">
+            <form action="" data-netlify="true" name="contact">
                 <input type="text" placeholder="name" class="box">
                 <input type="email" placeholder="email" class="box">
                 <input type="text" placeholder="project" class="box">
                 <textarea name="" id="" cols="30" rows=""10 class="box message" placeholder="message" ></textarea>
                 <button type="submit" class="btn">send <i class="fas fa-paper-plane"></i></button>
+
+                <input type="hidden" name="form-name" value="contact">
             </form>    
             </div>
          </section>
