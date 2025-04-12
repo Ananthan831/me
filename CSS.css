@@ -400,6 +400,9 @@ header .navbar ul li a:hover{
     color:var(--yellow);
     
 }
+.about .row .info h3:hover {
+     transform:(1.2) ;
+}
 .education .box-container{
     display:flex;
     align-items: center;
