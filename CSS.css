@@ -396,6 +396,10 @@ header .navbar ul li a:hover{
     color:var(--yellow);
     
 }
+.about .row .info h3 span .job{
+    color:var(--yellow);
+    
+}
 .education .box-container{
     display:flex;
     align-items: center;
